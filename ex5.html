@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Alignement et ordonnancement</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .grid-col {
+      border: 1px solid #dc3545;
+      background-color: rgba(220, 53, 69, 0.1);
+      padding: 20px 10px;
+      text-align: center;
+    }
+    .exercise-row { min-height: 200px; border: 2px solid #198754; }
+  </style>
+</head>
+<body>
+  <main class="container py-4">
+    <h1> Alignement et ordonnancement</h1>
+    <p class="lead">Toutes les colonnes sont alignées en bas. L'ordre visuel est inversé.</p>
+    <div class="row align-items-end exercise-row">
+      <div class="col-4 order-3 grid-col">Premier dans le HTML<br>(affiché dernier)</div>
+      <div class="col-4 order-2 grid-col">Deuxième<br>(affiché au milieu)</div>
+      <div class="col-4 order-1 grid-col">Troisième<br>(affiché premier)</div>
+    </div>
+  </main>
+</body>
+</html>
